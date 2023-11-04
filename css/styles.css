@@ -188,8 +188,14 @@ header nav a:focus {
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 16px;
     position: relative;
+    
+}
+
+.service-label:nth-child(1){
+    margin-top: 50px;
+
 }
 
 .input-label{
@@ -246,11 +252,35 @@ header nav a:focus {
     padding: 8px 16px;
 
 }
+
+
 .service-form{
-    margin-top: -20px;
+    margin-top: -25px;
+}
+
+.agree-text{
+color: var(--LIGHT-SLATE, #8E8F99);
+font-size: 12px;
+font-weight: 400;
+line-height: 14px; /* 116.667% */
+letter-spacing: 0.48px;
+}
+
+.modal-send{
+    color: var(--WHITE);
+    background: var(--IRIS);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.64px; 
+    border-radius: 4px; 
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15); 
+    padding: 16px 32px;
+    border: none;
 }
 
 
+/* -------------------------------------- */
 
 .list{
     list-style: none;
