@@ -152,7 +152,7 @@ header nav a:focus {
 }
 .modal {
     width: 408px;
-    height: 584px;
+    /* height: 584px; */
     background-color: white;
     border-radius: 4px;
     padding: 24px;
@@ -218,8 +218,8 @@ header nav a:focus {
 }
 
 .service-agree .agree-checkbox:checked + .agree-check-icon {
-    background-color: var(--iris);
-    border-color: var(--iris);
+    background-color: var(--IRIS);
+    border-color: var(--IRIS);
     fill: white;
     outline: none;
     stroke: white;
@@ -269,14 +269,16 @@ letter-spacing: 0.48px;
 .modal-send{
     color: var(--WHITE);
     background: var(--IRIS);
+    margin-top: 15px;
+    padding: 16px 32px;
     font-size: 16px;
-    font-weight: 500;
-    line-height: 16px;
-    letter-spacing: 0.64px; 
     border-radius: 4px; 
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15); 
-    padding: 16px 32px;
-    border: none;
+    border-color: transparent;
+}
+
+.modal-send:hover{
+    cursor: pointer;
 }
 
 
@@ -549,9 +551,7 @@ text-align: left;
 }
 
 .input-sub::placeholder {
-    c
-    
-    olor: white;
+    color: white;
 }
 
 .btn-sub {
@@ -586,7 +586,7 @@ text-align: left;
 .agree-check-icon {
     fill: none;
     margin-right: 8px;
-    border: 2px solid black;
+    border: 1px solid black;
     border-radius: 2px;
     transition: 250ms;
     transition-property: border-color, background-color, fill;
