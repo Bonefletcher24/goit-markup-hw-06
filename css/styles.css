@@ -284,6 +284,7 @@ letter-spacing: 0.48px;
 
 /* -------------------------------------- */
 
+
 .list{
     list-style: none;
     padding-left: 0;
@@ -293,7 +294,7 @@ letter-spacing: 0.48px;
 }
 
 div .list{
-    gap: 40px;
+    gap: 24px;
 }
 
 .list a {
@@ -357,6 +358,7 @@ justify-content: center;
 
 .team img{
 display: block;
+width: 100%;
 }
 
 .team-bg li{
@@ -371,6 +373,7 @@ text-align: center;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .main-list > li {
     display: flex;
@@ -380,6 +383,13 @@ text-align: center;
 
 .team-list{
 text-align: center;
+flex-wrap: wrap;
+
+}
+
+.doing-list {
+    text-align: center;
+    flex-wrap: wrap; 
 }
 
 
@@ -395,9 +405,7 @@ text-align: center;
 .doing-team-h2 h2{
 color: var(--NAVY-BLUE, #2E2F42);
 text-align: center;
-font-family: Roboto;
 font-size: 36px;
-font-style: normal;
 font-weight: 700;
 line-height: 40px; 
 letter-spacing: 0.72px;
@@ -431,10 +439,6 @@ button {
     cursor: pointer;
 }
 
-.container {
-    width: 1440px;
-
-}
 
 .customers-h2{
 color: var(--NAVY-BLUE, #2E2F42);
@@ -445,6 +449,7 @@ line-height: 40px;
 letter-spacing: 0.72px;
 text-transform: capitalize; 
 padding: 120px 558px 72px 559px;
+flex-wrap: wrap;
 }
 
 .customer-icon{
@@ -452,8 +457,9 @@ border: 1px solid #8E8F99;
 border-radius: 4px; 
 flex-shrink: 0;
 text-align: center;    
-padding: 16px 32px;
+padding: 16px 0 16px 0;
 margin-bottom: 120px;
+flex-basis: (100% / 2 - 30px);
 }
 
 .customer-icon svg{
@@ -591,6 +597,57 @@ text-align: left;
     transition: 250ms;
     transition-property: border-color, background-color, fill;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.container {
+    /* width: 1440px; */
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.customers-list{
+    flex-wrap: wrap;
+}
+
+/* CSS MEDIA QUERY */
+
+@media (min-width: 428px) {
+.container {
+    width: 428px;
+    }
+}
+
+@media (min-width: 768px) { /* 768px to 1199px */
+.container {
+    width: 768px;
+    }
+    .about-item,
+    .team-item {
+        flex-basis: calc(100% / 2 - 30px);
+
+    }
+    .customer-icon{
+        flex-basis: calc(100% / 3 - 30px);
+    }
+}
+
+@media (min-width: 1200px) {
+.container {
+    width: 1200px;
+    }
+    .about-item,
+    .team-item {
+        flex-basis: calc(100% / 4 - 30px);
+    /* 100%-полный экран
+    4-кол-во значков в strategy */
+    }
+    .customer-icon{
+        flex-basis: calc(100% / 6 - 30px);
+    }
+
 }
 
 
