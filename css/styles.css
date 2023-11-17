@@ -725,12 +725,12 @@ text-align: left;
     }
 }
 
-@media (max-width: 1199.5px) {
+/* @media (max-width: 1199.5px) {
 
     .contacts-list{
 flex-direction: column;  
     }
-}
+} */
 
 
 @media (min-width: 1200px) {
