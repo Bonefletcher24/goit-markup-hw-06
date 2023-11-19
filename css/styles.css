@@ -786,6 +786,32 @@ flex-direction: column;
         transition: transform 250ms ease-in-out;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
+
+    .mobile-links {
+        list-style-type: none;
+    }
+
+    .mobile-link {
+        font-size: 36px;
+        text-decoration: none;
+        font-weight: 700;
+        color: var(--navyblue);
+        margin-bottom: 40px;
+        display: inline-block;
+    }
+
+    .mobile-contact {
+        color: var(--navyblue);
+        text-decoration: none;
+        display: inline-block;
+        margin-bottom: 48px;
+    }
+
+    .mobile-link.mobile-active {
+        color: var(--ocean);
+    }
+
+
     
 
 .doing-team-h2 {
